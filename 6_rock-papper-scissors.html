@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock paper Scissors Game</title>
+</head>
+
+<body>
+  <h3>Rock paper and scissors Game</h3>
+
+  <button onclick="
+  const rand_value = Math.random();
+  let computerMove = '';
+  if(rand_value>=0 && rand_value<1/3){
+    computerMove= 'rock';
+  }
+
+  else if(rand_value>=1/3 && rand_value< 2/3){
+    computerMove='paper'
+  }
+
+  else if(rand_value>=2/3 && rand_value<= 1){
+    computerMove='scissors'
+  }
+  let result='';
+  if(computerMove==='rock'){
+   result ='Tie';
+  }
+
+  else if(computerMove==='paper'){
+   result ='Loose';
+  }
+
+  else if(computerMove==='scissors'){
+   result ='Win';
+  }
+
+  alert(`Your choice is rock. Computer choice is ${computerMove}. ${result}.`);
+  
+  ">Rock</button>
+
+
+  <button onclick="
+    const rand_value_1 = Math.random();
+    let computerMove_1 = '';
+    if(rand_value_1>=0 && rand_value_1<1/3){
+      computerMove_1= 'rock';
+    }
+
+    else if(rand_value_1>=1/3 && rand_value_1< 2/3){
+      computerMove_1='paper'
+    }
+
+    else if(rand_value_1>=2/3 && rand_value_1<= 1){
+      computerMove_1='scissors'
+    }
+    let result_1='';
+    if(computerMove_1==='rock'){
+    result_1 ='Loose';
+    }
+
+    else if(computerMove_1==='paper'){
+    result_1 ='Tie';
+    }
+
+    else if(computerMove_1==='scissors'){
+    result_1 ='Win';
+    }
+
+    alert(`Your choice is Paper. Computer choice is ${computerMove_1}. ${result_1}.`);
+  
+  ">Paper</button>
+
+
+  <button onclick="
+    const rand_value = Math.random();
+      let computerMove = '';
+      if(rand_value>=0 && rand_value<1/3){
+        computerMove= 'rock';
+      }
+
+      else if(rand_value>=1/3 && rand_value< 2/3){
+        computerMove='paper'
+      }
+
+      else if(rand_value>=2/3 && rand_value<= 1){
+        computerMove='scissors'
+      }
+      let result='';
+      if(computerMove==='rock'){
+      result ='Win';
+      }
+
+      else if(computerMove==='paper'){
+      result ='Loose';
+      }
+
+      else if(computerMove==='scissors'){
+      result ='Tie';
+      }
+
+      alert(`Your choice is Scissors. Computer choice is ${computerMove}. ${result}.`);
+  
+  ">Scissors</button> 
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>
